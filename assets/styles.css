@@ -14,3 +14,21 @@
 }
 
 /* Put CSS Styles Here */
+
+header {
+    background: var(--navGradient);
+}
+
+header img {
+    width: 15vw;
+    display: inline;
+}
+
+header ul {
+    list-style-type: none;
+    display: inline;
+}
+
+header li {
+    float: left;
+}
