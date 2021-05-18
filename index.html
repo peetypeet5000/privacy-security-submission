@@ -22,14 +22,70 @@
     <script src="assets/app.js"></script>
 
     <header>
-        <img src="/assets/img/logo-relay.png" alt="Firefox Relay Logo">
-            <ul>
-                <li>Home</li>
-                <li>FAQ</li>
-                <li><i class="fas fa-th"></i></li>
-                <li><i class="far fa-circle"></i></li>
-            </ul>
+        <nav class="navbar">
+            <img class="logo" src="/assets/img/logo-relay.png" alt="Firefox Relay Logo">
+            <a href="#" class="active">Home</a>
+            <a href="#">FAQ</a>
+            <a href="#"><i class="fas fa-th"></i></a>
+            <a href="#"><i class="far fa-circle"></i></a>
+        </nav>
     </header>
+
+    <div>
+
+        <div>
+            <h2>Manage Your Relay Aliases</h2>
+            <h4>4 Remaining Aliases</h4>
+            <button type="button"><i class="fas fa-plus"></i> Generate New Alias</button>
+        </div>
+
+        <div>
+            <p>Add account name</p>
+            <p>forwarding <i class="fas fa-toggle-on"></i></p>
+
+            <div>
+                <div>
+                    <p><b>sw4wo4v1s@relay.firefox.com<i class="far fa-copy"></i></b></p>
+                </div>
+
+                <div>Show Details <i class="fas fa-angle-down"></i></div>
+
+                <div>
+                    <div>
+                        <h4>0</h4>
+                    </div>
+                    <div>
+                        <p>Blocked</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <h4>0</h4>
+                    </div>
+                    <div>
+                        <p>Forwarded</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p>Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="/assets/img/logo-mozilla.svg" alt="Mozilla Logo">
+
+        <ul>
+            <li>Privacy</li>
+            <li>Relay Terms</li>
+            <li>Legal</li>
+            <li><i class="fab fa-github"></i></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

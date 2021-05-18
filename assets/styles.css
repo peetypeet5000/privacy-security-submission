@@ -15,20 +15,44 @@
 
 /* Put CSS Styles Here */
 
+body {
+    margin: 0px;
+}
+
 header {
-    background: var(--navGradient);
+    background: rgb(41,40,76);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 15vh;
 }
 
-header img {
-    width: 15vw;
-    display: inline;
+.navbar {
+    width: 100%;  /* i'm assuming full width */
+    height: 15vh; /* change it to desired width */
 }
 
-header ul {
-    list-style-type: none;
-    display: inline;
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: 10vh;
+    margin-right: 20px;
+    margin-top: 2.5vh;
+    margin-left: 15px;
 }
 
-header li {
-    float: left;
+.navbar a {
+    vertical-align: top;
+    margin-right: 20px;
+    height: 15vh;
+    font-size: 1.5em;
+    line-height: 15vh;
+    text-decoration: none;
+    float: right;
+    color: white;
+}
+
+.navbar .active {
+    border-bottom: 5px solid white;
 }
