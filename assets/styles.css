@@ -1,6 +1,7 @@
 :root {
     /* Colorful gradient used in the navigation bar */
   --navGradient: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+  --metropolis: "Metropolis", Arial, Helvetica, sans-serif;
 }
 
 /* Body font */
@@ -17,42 +18,157 @@
 
 body {
     margin: 0px;
+    font-family: "Inter UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: rgb(246, 246, 247);
 }
 
 header {
     background: rgb(41,40,76);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
     padding: 0px;
     margin: 0px;
     width: 100%;
-    height: 15vh;
+    height: 100px;
+    padding: 10px;
 }
 
 .navbar {
-    width: 100%;  /* i'm assuming full width */
-    height: 15vh; /* change it to desired width */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.logobox {
+    flex: 1 1 auto;
 }
 
 .logo {
-    display: inline-block;
-    vertical-align: top;
+    margin-top: 10px;
+    height: 75px;
     width: auto;
-    height: 10vh;
-    margin-right: 20px;
-    margin-top: 2.5vh;
     margin-left: 15px;
 }
 
 .navbar a {
-    vertical-align: top;
+    flex: 0 0 auto;
+    vertical-align: middle;
     margin-right: 20px;
-    height: 15vh;
     font-size: 1.5em;
-    line-height: 15vh;
     text-decoration: none;
-    float: right;
     color: white;
 }
 
-.navbar .active {
-    border-bottom: 5px solid white;
+a.space {
+    flex: 1 1 70%;
+}
+
+.navbar .active::after  {
+    display: block;
+    content: "";
+    background: var(--navGradient);
+    width: 100%;
+    height: 2px;
+    margin-bottom: -6px;
+    margin-top: 4px;
+}
+
+/* Body Styles */
+
+.content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.main-text {
+    margin-top: 100px;
+    width: 100%;
+    border-bottom: 5px solid lightgrey;
+}
+
+.main-text::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.main-text h2 {
+    font-size: 2em;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.main-text p {
+    margin-top: 35px;
+    font-size: 1.25em;
+    vertical-align: middle;
+    float: right;
+    width: 200px;
+}
+
+.main-text button {
+    background-color: rgb(0, 96, 223);
+    border-radius: 5px;
+    font-size: 1.4em;
+    padding: 10px;
+    border: none;
+    color: white;
+    float: right;
+    position: relative;
+    top: 100px;
+    left: 200px
+}
+
+.email {
+    margin-top: 100px;
+    font-size: 1.15em;
+}
+
+.email-header {
+    color: grey;
+    font-size: 1.1em;
+}
+
+.email-header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.add-account {
+    float: left;
+}
+
+.forward {
+    float: right;
+}
+
+.forward i {
+    color: rgb(0, 96, 223);
+    font-size: 1.6em;
+}
+
+.email-container {
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-stats {
+    display: flex;
+}
+
+.email-container .stat-numbers {
+    display: flex;
+    flex: 0 1 auto;
+    margin: auto 0 auto auto;
+}
+
+.stat-numbers .indiv-stat {
+    flex: 0 1 auto;
+}
+
+
+footer {
+    background: rgb(41,40,76);
 }

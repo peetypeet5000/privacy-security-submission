@@ -23,7 +23,8 @@
 
     <header>
         <nav class="navbar">
-            <img class="logo" src="/assets/img/logo-relay.png" alt="Firefox Relay Logo">
+            <a class="logobox" href="#"><img class="logo" src="/assets/img/logo-relay.png" alt="Firefox Relay Logo"></a>
+            <a hreef="#" class="space"></a>
             <a href="#" class="active">Home</a>
             <a href="#">FAQ</a>
             <a href="#"><i class="fas fa-th"></i></a>
@@ -31,42 +32,50 @@
         </nav>
     </header>
 
-    <div>
+    <div class="content">
 
-        <div>
+        <div class="main-text">
             <h2>Manage Your Relay Aliases</h2>
-            <h4>4 Remaining Aliases</h4>
-            <button type="button"><i class="fas fa-plus"></i> Generate New Alias</button>
+            <p><b>4</b> Remaining Aliases</p>
+            <button type="button"><i class="fas fa-plus"></i>  Generate New Alias</button>
         </div>
 
-        <div>
-            <p>Add account name</p>
-            <p>forwarding <i class="fas fa-toggle-on"></i></p>
+        <div class="email">
+            <div class="email-header">
+                <p class="add-account">Add account name</p>
+                <p class="forward">forwarding  <i class="fas fa-toggle-on"></i></p>
+            </div>
 
-            <div>
-                <div>
-                    <p><b>sw4wo4v1s@relay.firefox.com<i class="far fa-copy"></i></b></p>
+            <div class="email-container">
+                <div class="main-stats">
+                    <div>
+                        <p><b>sw4wo4v1s@relay.firefox.com<i class="far fa-copy"></i></b></p>
+                    </div>
+
+                    <div>Show Details <i class="fas fa-angle-down"></i></div>
+
+                    <div class="stat-numbers">
+                        <div class="indiv-stat">
+                            <div>
+                                <h4>0</h4>
+                            </div>
+                            <div>
+                                <p>Blocked</p>
+                            </div>
+                        </div>
+
+                        <div class="indiv-stat">
+                            <div>
+                                <h4>0</h4>
+                            </div>
+                            <div>
+                                <p>Forwarded</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div>Show Details <i class="fas fa-angle-down"></i></div>
-
-                <div>
-                    <div>
-                        <h4>0</h4>
-                    </div>
-                    <div>
-                        <p>Blocked</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <h4>0</h4>
-                    </div>
-                    <div>
-                        <p>Forwarded</p>
-                    </div>
-                </div>
             </div>
         </div>
 
