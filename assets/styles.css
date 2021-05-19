@@ -108,6 +108,7 @@ header {
     flex: 1;
     padding-left: 10vw;
     padding-right: 10vw;
+    background-image: https://github.com/peetypeet5000/privacy-security-submission/blob/working/assets/img/background.svg;
 }
 
 .manage-bar {
@@ -296,7 +297,7 @@ img.footer-ele {
 @media screen and (max-width: 760px) {
     html {
         font-size: 85%;
-    }
+}
 
 /* Mobile Breakpoint */
 @media screen and (max-width: 550px) {
@@ -349,7 +350,7 @@ img.footer-ele {
         text-decoration: none;
     }
 
-    #mobile-menu hr{
+    #mobile-menu hr {
         width: 100%;
         background: rgba(255, 255, 255, 0.05);
         border: none;
@@ -441,7 +442,7 @@ img.footer-ele {
         flex-direction: column;
     }
 
-    .footer-ele a{
+    .footer-ele a {
         margin: .5rem auto .5rem auto;
     }
 
