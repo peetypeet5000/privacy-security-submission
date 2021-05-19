@@ -160,7 +160,7 @@ header {
 }
 
 .email {
-    margin-top: 15vh;
+    margin-top: 100px;
     font-size: 1.15em;
 }
 
@@ -287,6 +287,7 @@ footer {
     justify-content: space-between;
     height: 50px;
     font-family: var(--metropolis);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav.footer-ele {
@@ -308,7 +309,7 @@ nav.footer-ele {
 
 img.footer-ele {
     max-height: 50px;
-    margin-left: 50px;
+    
 }
 
 @media screen and (max-width: 760px) {
@@ -357,7 +358,7 @@ img.footer-ele {
 
     #mobile-menu nav {
         flex-direction: column;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.5);
         align-items: flex-end;
     } 
 
@@ -420,6 +421,10 @@ img.footer-ele {
         margin: auto auto auto auto;
     }
 
+    .email {
+        margin-top: 50px;
+    }
+
     .email-header {
         justify-content: flex-end;
     }
@@ -431,13 +436,22 @@ img.footer-ele {
 
     .email-detail {
         width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .indiv-email-detail {
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .indiv-email-detail.created {
+        flex-direction: row;
+    }
+
+
+    .indiv-email-detail.created p {
+        margin: .5rem auto .5rem 0;
     }
 
     .indiv-email-detail h6 {
@@ -445,8 +459,9 @@ img.footer-ele {
     }
 
     .indiv-email-detail h4 {
-        margin: .5rem auto .5rem 0;
+        margin: .5rem 0 .5rem auto;
     }
+
 
     footer {
         height: auto;
@@ -460,7 +475,7 @@ img.footer-ele {
     }
 
     .footer-ele a {
-        margin: .5rem auto .5rem auto;
+        margin: 1rem auto 1rem auto;
     }
 
     img.footer-ele {
