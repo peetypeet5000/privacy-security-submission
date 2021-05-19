@@ -22,19 +22,25 @@
     <script async defer src="assets/app.js"></script>
 
     <header class="flex">
-        <img class="logo" src="/assets/img/logo-relay.png" alt="Firefox Relay Logo">
-        <nav class="header-nav flex no-mobile">
-            <a href="#" class="active">Home</a>
-            <a href="#">FAQ</a>
-        </nav>
-        <div class="header-buttons">
-            <a href="#"><i class="fas fa-th"></i></a>
-            <a href="#"><i class="far fa-circle"></i></a>
+        <div class="main-header flex">
+            <img class="logo" src="/assets/img/logo-relay.png" alt="Firefox Relay Logo">
+            <nav class="header-nav flex no-mobile">
+                <a href="#" class="active">Home</a>
+                <a href="#">FAQ</a>
+            </nav>
+            <div class="header-buttons">
+                <a href="#"><i class="fas fa-th"></i></a>
+                <a href="#"><i class="far fa-circle"></i></a>
+            </div>
         </div>
-        <nav class="mobile-menu mobile-only">
-            <a href="#" class="active">Home</a>
-            <a href="#">FAQ</a>
-        </nav>
+        <div class="mobile-menu mobile-only">
+            <div id="mobile-menu-button">Menu <i class="fas fa-angle-down left-marg"></i></div>
+            <nav class="flex">
+                <a href="#" class="active">Home</a>
+                <hr noshade size="1">
+                <a href="#">FAQ</a>
+            </nav>
+        </div>
     </header>
 
     <div class="content">
