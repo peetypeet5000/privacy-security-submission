@@ -16,54 +16,65 @@
 
 /* Put CSS Styles Here */
 
+/* Overall Styles */
+
 body {
     margin: 0px;
     font-family: "Inter UI", Helvetica Neue, Helvetica, Arial, sans-serif;
     background: rgb(246, 246, 247);
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+.flex {
+    display: flex;
+}
+
+.grey {
+    color: grey;
+}
+
+.left-marg {
+    margin-left: .9em;
+}
+
+/* Header Styles */
 
 header {
+    justify-content: space-between;
+    font-family: var(--metropolis);
     background: rgb(41,40,76);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    height: 100px;
-    padding: 10px;
+    height: 50px;
+    padding: 25px;
 }
 
-.navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 100%;
+.header-nav {
+    margin: auto 0 auto auto;
 }
 
-.logobox {
-    flex: 1 1 auto;
-}
-
-.logo {
-    margin-top: 10px;
-    height: 75px;
-    width: auto;
-    margin-left: 15px;
-}
-
-.navbar a {
-    flex: 0 0 auto;
-    vertical-align: middle;
-    margin-right: 20px;
+.header-nav a {
+    margin: auto 2em auto auto;
     font-size: 1.5em;
     text-decoration: none;
     color: white;
 }
 
-a.space {
-    flex: 1 1 70%;
+.logo {
+    height: 50px;
 }
 
-.navbar .active::after  {
+.header-buttons {
+    margin: auto .0 auto 0;
+}
+
+.header-buttons i {
+    margin: auto 1em auto auto;
+    color: white;
+    font-size: 2em;
+}
+
+.header-nav .active::after  {
     display: block;
     content: "";
     background: var(--navGradient);
@@ -73,50 +84,47 @@ a.space {
     margin-top: 4px;
 }
 
+
 /* Body Styles */
 
 .content {
+    flex: 1;
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
-.main-text {
-    margin-top: 100px;
-    width: 100%;
-    border-bottom: 5px solid lightgrey;
+.manage-bar {
+    margin-top: 10vh;
+    border-bottom: 3px solid lightgrey;
+    justify-content: space-between;
 }
 
-.main-text::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
 .main-text h2 {
     font-size: 2em;
-    float: left;
     margin-bottom: 5px;
 }
 
 .main-text p {
     margin-top: 35px;
     font-size: 1.25em;
-    vertical-align: middle;
-    float: right;
-    width: 200px;
 }
 
 .main-text button {
     background-color: rgb(0, 96, 223);
+    transition: all .2s ease-in;
     border-radius: 5px;
     font-size: 1.4em;
     padding: 10px;
     border: none;
     color: white;
     float: right;
-    position: relative;
-    top: 100px;
-    left: 200px
+    margin-top: 1em;
+}
+
+.main-text button:hover {
+    background-color: rgb(0, 65, 149);
+    transition: all .2s ease-in;
 }
 
 .email {
@@ -127,48 +135,141 @@ a.space {
 .email-header {
     color: grey;
     font-size: 1.1em;
+    justify-content: space-between;
 }
 
-.email-header::after {
-    content: "";
-    clear: both;
-    display: table;
+.email-header .up {
+    margin-right: .5em;
+    margin-top: .2em;
 }
 
-.add-account {
-    float: left;
+.add-acc i {
+    margin-left: .5em;
+    color: gray;
 }
 
-.forward {
-    float: right;
-}
 
 .forward i {
     color: rgb(0, 96, 223);
-    font-size: 1.6em;
+    font-size: 1.65em;
 }
 
+.below-text {
+    margin-top: 2em;
+}
+
+
+/* Email Box Styles */
 .email-container {
-    padding: 15px;
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.relay-email p {
+    margin: .2em auto 1em auto;
+}
+
+.relay-email .small {
+    font-size: .9em;
+}
+
+
 .main-stats {
-    display: flex;
+    padding: 15px;
+    justify-content: space-between;
 }
 
-.email-container .stat-numbers {
-    display: flex;
-    flex: 0 1 auto;
-    margin: auto 0 auto auto;
+.indiv-stat h4 {
+    font-size: 2em;
+    margin: .25em auto .25em auto;
 }
 
-.stat-numbers .indiv-stat {
-    flex: 0 1 auto;
+.indiv-stat p {
+    margin: .1em auto .1em auto;
 }
 
+
+.indiv-stat {
+    font-family: var(--metropolis);
+    flex-direction: column;
+    align-items: center;
+}
+
+.indiv-stat.left {
+    margin-left: 3em;
+}
+
+.expanded-stats {
+    background: rgb(241, 241, 243);
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indiv-email-detail {
+    flex-direction: column;
+}
+
+.indiv-email-detail h6 {
+    font-size: .9em;
+    font-weight: normal;
+    margin: .2em auto .2em auto;
+}
+
+.indiv-email-detail p {
+    font-size: .9em;
+    margin: 0 0 0 0;
+}
+
+.indiv-email-detail.left {
+    margin-left: 3em;
+}
+
+.delete-button {
+    background-color: white;
+    color: grey;
+    transition: all .2s ease-in;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: .5em 1.1em .5em 1.1em;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: red;
+    transition: all .2s ease-in;
+    color: white;
+}
+
+
+
+
+/* Footer Styles */
 
 footer {
+    padding: 25px;
     background: rgb(41,40,76);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    font-family: var(--metropolis);
+}
+
+nav.footer-ele {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-ele a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: auto 2.5em auto auto;
+}
+
+
+img.footer-ele {
+    max-height: 50px;
+    margin-left: 50px;
 }
