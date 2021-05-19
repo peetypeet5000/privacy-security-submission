@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body>
+<body class="flex">
     <!-- Put HTML Here -->
     
     <!-- 
@@ -19,7 +19,117 @@
         Example usage: <i class="fas fa-toggle-off"></i>
      -->
     <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
-    <script src="assets/app.js"></script>
+    <script async defer src="assets/app.js"></script>
+
+    <header class="flex">
+        <div class="main-header flex">
+            <img class="logo" src="https://github.com/peetypeet5000/privacy-security-submission/blob/working/assets/img/logo-relay.png?raw=true" alt="Firefox Relay Logo">
+            <nav class="header-nav flex no-mobile">
+                <a href="#" class="active">Home</a>
+                <a href="#">FAQ</a>
+            </nav>
+            <div class="header-buttons">
+                <a href="#"><i class="fas fa-th"></i></a>
+                <a href="#"><i class="far fa-circle"></i></a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-only">
+            <div id="mobile-menu-button"><span>Menu </span><i class="fas fa-angle-down left-marg"></i></div>
+            <nav class="flex hidden">
+                <a href="#" class="active">Home</a>
+                <hr noshade size="1">
+                <a href="#">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div class="main-text">
+            <div class="manage-bar flex">
+                <h2>Manage your Relay aliases</h2>
+                <p><b>4</b> Remaining Aliases</p>
+            </div>
+            <button type="button"><i class="fas fa-plus"></i>  Generate New Alias</button>
+        </div>
+
+        <div class="email">
+            <div class="email-header flex">
+                <p class="add-acc flex hover no-mobile">Add account name <i class="fas hover fa-pencil-alt"></i></p>
+                <p class="forward flex"><span class="up">forwarding</span>   <i class="fas fa-toggle-on"></i></p>
+            </div>
+
+            <div class="email-container">
+                <div class="main-stats flex">
+                    <div class="relay-email">
+                        <p><b>sw4wo4v1s@relay.firefox.com<i class="far fa-copy grey hover left-marg"></i></b></p>
+                        <div id="detail-button" class="hover grey"><span>Show Details</span><i class="fas fa-angle-down left-marg"></i></div>
+                    </div>
+
+                    <div class="stat-numbers flex no-mobile">
+                        <div class="indiv-stat flex">
+                            <h4 class="grey">0</h4>
+                            <p class="grey">Blocked</p>
+                        </div>
+
+                        <div class="indiv-stat flex left">
+                            <h4>0</h4>
+                            <p class="grey">Forwarded</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="expanded-stats" class="hidden flex">
+                    <div class="email-detail flex">
+                        <div class="indiv-email-detail created flex">
+                            <p class="grey">Created:</p>
+                            <h6>May 10, 2021</h6>
+                        </div>
+
+                        <div class="indiv-email-detail flex mobile-only">
+                            <h4 class="grey">0</h4>
+                            <p class="grey">Blocked</p>
+                        </div>
+
+                        <div class="indiv-email-detail flex mobile-only">
+                            <h4>0</h4>
+                            <p class="grey">Forwarded</p>
+                        </div>
+
+                        <div class="indiv-email-detail flex left no-mobile">
+                            <p class="grey">Forward emails to:</p>
+                            <h6>mcrawford@mozilla.com</h6>
+                        </div>
+                        <div class="stat-numbers flex mobile-only">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="delete-button" type="button">Delete</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="below-text">
+            <p>Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
+        </div>
+
+        <br><br><br><br>
+
+    </div>
+
+    <footer class="flex">
+        <img class="footer-ele" src="https://raw.githubusercontent.com/peetypeet5000/privacy-security-submission/working/assets/img/logo-mozilla.svg" alt="Mozilla Logo">
+
+        <nav class="footer-ele flex">
+            <a href="#">Privacy</a>
+            <a href="#">Relay Terms</a>
+            <a href="#">Legal</a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </nav>
+    </footer>
 </body>
 
 </html>

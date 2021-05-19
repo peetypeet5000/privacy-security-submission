@@ -1,6 +1,7 @@
 :root {
     /* Colorful gradient used in the navigation bar */
   --navGradient: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+  --metropolis: "Metropolis", Arial, Helvetica, sans-serif;
 }
 
 /* Body font */
@@ -14,3 +15,470 @@
 }
 
 /* Put CSS Styles Here */
+
+/* Overall Styles */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: "Inter UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: rgb(246, 246, 247);
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.grey {
+    color: grey;
+}
+
+.left-marg {
+    margin-left: .9em;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.hover {
+    transition: all .2s ease-in;
+}
+
+.hover:hover {
+    color: black;
+    transition: all .2s ease-in;
+}
+
+/* Header Styles */
+
+header {
+    color: white;
+    font-family: var(--metropolis);
+    background: rgb(41,40,76);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-header {
+    width: 100%;
+    justify-content: space-between;
+    height: 50px;
+    padding: 25px;
+}
+
+.header-nav a:hover {
+    color: rgb(0, 96, 223);
+}
+
+.header-nav {
+    margin: auto 0 auto auto;
+}
+
+.header-nav a {
+    margin: auto 2em auto auto;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-buttons {
+    margin: auto .0 auto 0;
+}
+
+.header-buttons i {
+    margin: auto 1em auto auto;
+    color: white;
+    font-size: 2rem;
+}
+
+.header-nav .active::after  {
+    display: block;
+    content: "";
+    background: var(--navGradient);
+    width: 100%;
+    height: 2px;
+    margin-bottom: -6px;
+    margin-top: 4px;
+}
+
+
+/* Body Styles */
+
+.content {
+    flex: 1;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-image: url("https://raw.githubusercontent.com/peetypeet5000/privacy-security-submission/working/assets/img/background.svg");
+}
+
+.manage-bar {
+    margin-top: 10vh;
+    border-bottom: 3px solid lightgrey;
+    justify-content: space-between;
+}
+
+
+.main-text h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.main-text p {
+    margin-top: 35px;
+    font-size: 1.25em;
+}
+
+.main-text button {
+    background-color: rgb(0, 96, 223);
+    font-family: var(--metropolis);
+    transition: all .2s ease-in;
+    border-radius: 5px;
+    font-size: 1.4em;
+    padding: 10px;
+    border: none;
+    color: white;
+    float: right;
+    margin-top: 1em;
+}
+
+.main-text button:hover {
+    background-color: rgb(0, 65, 149);
+    transition: all .2s ease-in;
+}
+
+.email {
+    margin-top: 100px;
+    font-size: 1.15em;
+}
+
+.email-header {
+    color: grey;
+    font-size: 1.1em;
+    justify-content: space-between;
+}
+
+.email-header .up {
+    margin-right: .5em;
+    margin-top: .2em;
+}
+
+
+.add-acc i {
+    margin-left: .5em;
+    color: gray;
+}
+
+
+.forward i {
+    color: rgb(0, 96, 223);
+    font-size: 1.65em;
+}
+
+.below-text {
+    margin-top: 2em;
+}
+
+
+/* Email Box Styles */
+.email-container {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.relay-email p {
+    margin: .2em auto 1em auto;
+}
+
+#detail-button {
+    font-size: .9em;
+    user-select: none;
+}
+
+
+.main-stats {
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.indiv-stat h4 {
+    font-size: 2em;
+    margin: .25em auto .25em auto;
+}
+
+.indiv-stat p {
+    margin: .1em auto .1em auto;
+}
+
+
+.indiv-stat {
+    font-family: var(--metropolis);
+    flex-direction: column;
+    align-items: center;
+}
+
+.indiv-stat.left {
+    margin-left: 3em;
+}
+
+#expanded-stats {
+    background: rgb(241, 241, 243);
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indiv-email-detail {
+    flex-direction: column;
+}
+
+.indiv-email-detail h6 {
+    font-size: .9em;
+    font-weight: normal;
+    margin: .2em auto .2em auto;
+}
+
+.indiv-email-detail p {
+    font-size: .9em;
+    margin: 0 0 0 0;
+}
+
+.indiv-email-detail.left {
+    margin-left: 3em;
+}
+
+.delete-button {
+    background-color: white;
+    font-family: var(--metropolis);
+    color: grey;
+    transition: all .2s ease-in;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: .5em 1.1em .5em 1.1em;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: red;
+    transition: all .2s ease-in;
+    color: white;
+}
+
+
+
+
+/* Footer Styles */
+
+footer {
+    padding: 25px;
+    background: rgb(41,40,76);
+    justify-content: space-between;
+    height: 50px;
+    font-family: var(--metropolis);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav.footer-ele {
+    justify-content: center;
+}
+
+.footer-ele a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: auto 2.5em auto auto;
+}
+
+.footer-ele a:hover {
+    color: rgb(0, 96, 223)
+}
+
+
+img.footer-ele {
+    max-height: 50px;
+    
+}
+
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 85%;
+}
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 80%;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .main-header {
+        padding: 25px 0 25px 0;
+        align-items: center;
+    }
+
+    #mobile-menu {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+        background-color: rgb(47, 47, 84);
+        box-shadow: 0px 3px 10px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    #mobile-menu-button {
+        margin: 1rem;
+    }
+
+    #mobile-menu nav {
+        flex-direction: column;
+        box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.5);
+        align-items: flex-end;
+    } 
+
+    #mobile-menu a {
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    #mobile-menu hr {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        margin: 0;
+    }
+
+    #mobile-menu .active::before {
+        content: "";
+        height: .65rem;
+        width: .65rem;
+        background: var(--navGradient);
+        border-radius: 50%;
+        margin-right: .3rem;
+        margin-bottom: .2rem;
+        display: inline-block;
+    }
+
+    .logo {
+        height: 35px;
+        margin-left: 1rem;
+    }
+
+    .manage-bar {
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+
+    .manage-bar h2 {
+        padding-bottom: 1rem;
+        width: 100%;
+        font-size: 1.5rem;
+        border-bottom: 3px solid lightgrey;
+        text-align: center;
+    }
+
+    .manage-bar p {
+        margin-top: .3rem;
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-text button {
+        max-width: 50%;
+        font-size: 1rem;
+        margin: auto auto auto auto;
+    }
+
+    .email {
+        margin-top: 50px;
+    }
+
+    .email-header {
+        justify-content: flex-end;
+    }
+
+    #expanded-stats {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .email-detail {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .indiv-email-detail {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .indiv-email-detail.created {
+        flex-direction: row;
+    }
+
+
+    .indiv-email-detail.created p {
+        margin: .5rem auto .5rem 0;
+    }
+
+    .indiv-email-detail h6 {
+        margin: auto 0 auto auto;
+    }
+
+    .indiv-email-detail h4 {
+        margin: .5rem 0 .5rem auto;
+    }
+
+
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .footer-ele {
+        flex-direction: column;
+    }
+
+    .footer-ele a {
+        margin: 1rem auto 1rem auto;
+    }
+
+    img.footer-ele {
+        margin: auto;
+    }
+}
