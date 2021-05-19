@@ -18,6 +18,10 @@
 
 /* Overall Styles */
 
+html {
+    font-size: 100%;
+}
+
 body {
     margin: 0px;
     font-family: "Inter UI", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -42,6 +46,10 @@ body {
     display: none;
 }
 
+.mobile-only {
+    display: none;
+}
+
 /* Header Styles */
 
 header {
@@ -59,7 +67,7 @@ header {
 
 .header-nav a {
     margin: auto 2em auto auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     color: white;
 }
@@ -75,7 +83,7 @@ header {
 .header-buttons i {
     margin: auto 1em auto auto;
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .header-nav .active::after  {
@@ -105,7 +113,7 @@ header {
 
 
 .main-text h2 {
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 5px;
 }
 
@@ -133,7 +141,7 @@ header {
 }
 
 .email {
-    margin-top: 100px;
+    margin-top: 15vh;
     font-size: 1.15em;
 }
 
@@ -257,14 +265,12 @@ header {
 footer {
     padding: 25px;
     background: rgb(41,40,76);
-    display: flex;
     justify-content: space-between;
     height: 50px;
     font-family: var(--metropolis);
 }
 
 nav.footer-ele {
-    display: flex;
     justify-content: center;
 }
 
@@ -272,7 +278,7 @@ nav.footer-ele {
     margin-right: 20px;
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: auto 2.5em auto auto;
 }
 
@@ -280,4 +286,110 @@ nav.footer-ele {
 img.footer-ele {
     max-height: 50px;
     margin-left: 50px;
+}
+
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 85%;
+    }
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 80%;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .logo {
+        height: 35px;
+    }
+
+    .manage-bar {
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+
+    .manage-bar h2 {
+        padding-bottom: 1rem;
+        width: 100%;
+        font-size: 1.5rem;
+        border-bottom: 3px solid lightgrey;
+        text-align: center;
+    }
+
+    .manage-bar p {
+        margin-top: .3rem;
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-text button {
+        max-width: 50%;
+        font-size: 1rem;
+        margin: auto auto auto auto;
+    }
+
+    .email-header {
+        justify-content: flex-end;
+    }
+
+    #expanded-stats {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .email-detail {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .indiv-email-detail {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .indiv-email-detail h6 {
+        margin: auto 0 auto auto;
+    }
+
+    .indiv-email-detail h4 {
+        margin: .5rem auto .5rem 0;
+    }
+
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .footer-ele {
+        flex-direction: column;
+    }
+
+    .footer-ele a{
+        margin: .5rem auto .5rem auto;
+    }
+
+    img.footer-ele {
+        margin: auto;
+    }
 }

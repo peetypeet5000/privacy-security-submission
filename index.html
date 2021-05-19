@@ -23,7 +23,7 @@
 
     <header class="flex">
         <img class="logo" src="/assets/img/logo-relay.png" alt="Firefox Relay Logo">
-        <nav class="header-nav flex">
+        <nav class="header-nav flex no-mobile">
             <a href="#" class="active">Home</a>
             <a href="#">FAQ</a>
         </nav>
@@ -31,6 +31,10 @@
             <a href="#"><i class="fas fa-th"></i></a>
             <a href="#"><i class="far fa-circle"></i></a>
         </div>
+        <nav class="mobile-menu mobile-only">
+            <a href="#" class="active">Home</a>
+            <a href="#">FAQ</a>
+        </nav>
     </header>
 
     <div class="content">
@@ -45,7 +49,7 @@
 
         <div class="email">
             <div class="email-header flex">
-                <p class="add-acc flex">Add account name <i class="fas fa-pencil-alt"></i></p>
+                <p class="add-acc flex no-mobile">Add account name <i class="fas fa-pencil-alt"></i></p>
                 <p class="forward flex"><span class="up">forwarding</span>   <i class="fas fa-toggle-on"></i></p>
             </div>
 
@@ -56,7 +60,7 @@
                         <div id="detail-button"><span>Show Details</span><i class="fas fa-angle-down left-marg"></i></div>
                     </div>
 
-                    <div class="stat-numbers flex">
+                    <div class="stat-numbers flex no-mobile">
                         <div class="indiv-stat flex">
                             <h4 class="grey">0</h4>
                             <p class="grey">Blocked</p>
@@ -75,9 +79,22 @@
                             <p class="grey">Created:</p>
                             <h6>May 10, 2021</h6>
                         </div>
-                        <div class="indiv-email-detail flex left">
+
+                        <div class="indiv-email-detail flex mobile-only">
+                            <h4 class="grey">0</h4>
+                            <p class="grey">Blocked</p>
+                        </div>
+
+                        <div class="indiv-email-detail flex mobile-only">
+                            <h4>0</h4>
+                            <p class="grey">Forwarded</p>
+                        </div>
+
+                        <div class="indiv-email-detail flex left no-mobile">
                             <p class="grey">Forward emails to:</p>
                             <h6>mcrawford@mozilla.com</h6>
+                        </div>
+                        <div class="stat-numbers flex mobile-only">
                         </div>
                     </div>
                     <div>
@@ -93,12 +110,14 @@
             <p>Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
         </div>
 
+        <br><br><br><br>
+
     </div>
 
-    <footer>
+    <footer class="flex">
         <img class="footer-ele" src="/assets/img/logo-mozilla.svg" alt="Mozilla Logo">
 
-        <nav class="footer-ele">
+        <nav class="footer-ele flex">
             <a href="#">Privacy</a>
             <a href="#">Relay Terms</a>
             <a href="#">Legal</a>
