@@ -38,6 +38,10 @@ body {
     margin-left: .9em;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Header Styles */
 
 header {
@@ -112,6 +116,7 @@ header {
 
 .main-text button {
     background-color: rgb(0, 96, 223);
+    font-family: var(--metropolis);
     transition: all .2s ease-in;
     border-radius: 5px;
     font-size: 1.4em;
@@ -169,8 +174,10 @@ header {
     margin: .2em auto 1em auto;
 }
 
-.relay-email .small {
+#detail-button {
     font-size: .9em;
+    user-select: none;
+    color: grey;
 }
 
 
@@ -199,7 +206,7 @@ header {
     margin-left: 3em;
 }
 
-.expanded-stats {
+#expanded-stats {
     background: rgb(241, 241, 243);
     padding: 15px;
     justify-content: space-between;
@@ -227,6 +234,7 @@ header {
 
 .delete-button {
     background-color: white;
+    font-family: var(--metropolis);
     color: grey;
     transition: all .2s ease-in;
     border-radius: 5px;

@@ -19,7 +19,7 @@
         Example usage: <i class="fas fa-toggle-off"></i>
      -->
     <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
-    <script src="assets/app.js"></script>
+    <script async defer src="assets/app.js"></script>
 
     <header class="flex">
         <img class="logo" src="/assets/img/logo-relay.png" alt="Firefox Relay Logo">
@@ -53,7 +53,7 @@
                 <div class="main-stats flex">
                     <div class="relay-email">
                         <p><b>sw4wo4v1s@relay.firefox.com<i class="far fa-copy grey left-marg"></i></b></p>
-                        <div class="small grey">Show Details<i class="fas fa-angle-down left-marg"></i></div>
+                        <div id="detail-button"><span>Show Details</span><i class="fas fa-angle-down left-marg"></i></div>
                     </div>
 
                     <div class="stat-numbers flex">
@@ -69,7 +69,7 @@
                     </div>
 
                 </div>
-                <div class="expanded-stats flex">
+                <div id="expanded-stats" class="hidden flex">
                     <div class="email-detail flex">
                         <div class="indiv-email-detail flex">
                             <p class="grey">Created:</p>
