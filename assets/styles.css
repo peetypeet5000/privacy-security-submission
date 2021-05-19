@@ -50,6 +50,15 @@ body {
     display: none;
 }
 
+.hover {
+    transition: all .2s ease-in;
+}
+
+.hover:hover {
+    color: black;
+    transition: all .2s ease-in;
+}
+
 /* Header Styles */
 
 header {
@@ -64,6 +73,10 @@ header {
     justify-content: space-between;
     height: 50px;
     padding: 25px;
+}
+
+.header-nav a:hover {
+    color: rgb(0, 96, 223);
 }
 
 .header-nav {
@@ -108,7 +121,7 @@ header {
     flex: 1;
     padding-left: 10vw;
     padding-right: 10vw;
-    background-image: https://github.com/peetypeet5000/privacy-security-submission/blob/working/assets/img/background.svg;
+    background-image: url("https://raw.githubusercontent.com/peetypeet5000/privacy-security-submission/working/assets/img/background.svg");
 }
 
 .manage-bar {
@@ -162,6 +175,7 @@ header {
     margin-top: .2em;
 }
 
+
 .add-acc i {
     margin-left: .5em;
     color: gray;
@@ -191,7 +205,6 @@ header {
 #detail-button {
     font-size: .9em;
     user-select: none;
-    color: grey;
 }
 
 
@@ -286,6 +299,10 @@ nav.footer-ele {
     text-decoration: none;
     font-size: 1.2em;
     margin: auto 2.5em auto auto;
+}
+
+.footer-ele a:hover {
+    color: rgb(0, 96, 223)
 }
 
 
